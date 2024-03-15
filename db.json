@@ -1,4 +1,24 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "type": 1,
+      "name": "Admin Adminson",
+      "email": "admin@example.com",
+      "cell": "00000000000",
+      "password": "admin123"
+    },
+    {
+      "id": 2,
+      "type": 0,
+      "name": "Teste1",
+      "email": "teste1@teste1.com.br",
+      "cell": "11111111111",
+      "password": "1testE"
+    }
+
+  ],
+
   "restaurantes": [
     {
       "id": 1,
