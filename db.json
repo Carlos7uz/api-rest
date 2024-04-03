@@ -15,10 +15,11 @@
       "email": "teste1@teste1.com.br",
       "cell": "11111111111",
       "password": "1testE"
+    },
+    {
+      "id": 3
     }
-
   ],
-
   "restaurantes": [
     {
       "id": 1,
@@ -91,6 +92,9 @@
       "endereco": "Avenida Munhoz da Rocha, 580, Cabral, Curitiba-PR",
       "horario": "Domingo a quinta-feira: 11h45 – 22h30 Sexta-feira e sábado: 11h45 – 23h00",
       "comoChegar": ""
+    },
+    {
+      "id": 9
     }
   ]
 }
