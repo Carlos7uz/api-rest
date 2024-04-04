@@ -1,4 +1,13 @@
 {
+  "reservas": [
+    {
+      "id": 1,
+      "place": "teste",
+      "date": "teste",
+      "people": 1,
+      "time": 1
+    }
+  ],
   "users": [
     {
       "id": 1,
