@@ -17,9 +17,19 @@ server.get('/restaurantes', (req, res, next) => {
     return router(req, res, next);
   });
   
-  // Rota para PUT
-  server.put('/restaurantes/:id', (req, res, next) => {
-    return router(req, res, next);
+  // Adicione uma rota PUT para /restaurantes/:id
+server.put('/restaurantes/:id', (req, res, next) => {
+    const restauranteId = parseInt(req.params.id); // Obtenha o ID do restaurante da URL
+    const newData = req.body; // Obtenha os dados atualizados do corpo da requisição
+    const db = router.db; // Acesse o banco de dados JSON
+  
+    // Atualize o restaurante no banco de dados JSON
+    db.get('restaurantes')
+      .find({ id: restauranteId })
+      .assign(newData)
+      .write();
+  
+    res.status(200).json(newData); // Envie uma resposta de sucesso com os dados atualizados
   });
   
   // Rota para DELETE
