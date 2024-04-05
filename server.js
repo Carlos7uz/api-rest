@@ -4,6 +4,11 @@ const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
+server.use(router);
+
+server.all('*', (req, res, next) => {
+    router(req, res, next)
+})
 
 server.use(
     jsonServer.rewriter({
@@ -11,7 +16,6 @@ server.use(
     })
 )
 
-server.use(router);
 
 server.listen(3000, () => {
     console.log('JSON Server is running')
