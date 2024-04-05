@@ -1,0 +1,5 @@
+{
+    "/api/*": "/$1",
+    "/restaurantes\\?name=:term": "/restaurantes?q=:term"
+  }
+  
